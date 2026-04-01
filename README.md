@@ -1,4 +1,4 @@
-# Varational meta-Learning reduced-order neural model structures
+# Varational meta-learning reduced-order neural model structures
 
 This repository contains the Python code to reproduce the results of the paper *Variational meta-learning inference for low dimensional neural system identification*
 

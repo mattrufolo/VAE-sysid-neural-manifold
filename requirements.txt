@@ -1,0 +1,9 @@
+matplotlib
+seaborn
+tqdm
+flax==0.8.2
+diffrax
+ipykernel
+ipywidgets
+ipympl
+jax==0.4.26

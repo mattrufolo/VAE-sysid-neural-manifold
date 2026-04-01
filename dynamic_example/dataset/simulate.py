@@ -1,5 +1,4 @@
 import jax
-
 import jax.numpy as jnp
 import jax.random as jr
 from functools import partial
@@ -7,7 +6,6 @@ import diffrax
 from .input.signals import multisine_signal
 from .input.interpolation import ZOHInterpolation as Interpolation
 #from diffrax import LinearInterpolation as Interpolation
-
 
 
 def simulate_diffrax(x0, t, u, params, f_xu):
@@ -93,8 +91,6 @@ def discretize_rk4(fun_ct, dt):
         k4 = fun_ct(x + dt * k3, u, args)
         dx = dt / 6.0 * (k1 + 2.0 * k2 + 2.0 * k3 + k4)
         x_new = x + dx
-        x_new = jnp.clip(x_new, a_min=-50.0, a_max=50.0) 
-        
         return x_new, x
     return fun_rk
 
